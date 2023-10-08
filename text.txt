@@ -1,0 +1,87 @@
+ <p>Many HTML tags have <em>semantic </em>meaning. That is, the element itself conveys some information about the type of content contained between the opening and closing tags.</p>
+
+        <h3>Semantic web history </h3>
+        <p>When you google semantic web, you will find the term often in relation with <em>HTML 5.</em></p>
+
+        <p>A lot of new semantic tags were introduced in 2014 with HTML 5, but HTML was from the beginning <em>a language with semantic tags and meaning.</em></p>
+        
+        <h3>Why be Semantic</h3>
+        <ul>
+            <li>more searchable content</li>
+            <li>better search engine ranking</li>
+            <li>less clutter of meaningless HTML</li>
+            <li>less errors in source code and more performant</li>
+            <li>better accessible for assistive technologies, like screen readers</li>
+        </ul>
+        <h4>A Well Developed Website</h4>
+        <ol>
+            <li>has valid code</li>
+            <li>is fast and performant</li>   
+            <li>is searchable by humans and bots</li>
+            <li>is accessible for disabled people</li>
+        </ol>
+        <img src="html-logo.jpg" alt="html_logo" title="HTML_logo">
+        <form>
+            <fieldset>
+                <legend>Your Contact</legend>
+                <input type="text" id="username">
+                <label for="username">Your name:</label>
+                <input type="email" id="e-mail">
+                <label for="e-mail">Your e-mail:</label>
+                
+            </fieldset>
+        </form>
+        <table>
+             <tr>
+                <th>Email</th>
+                <th>Address</th>
+            </tr>
+            <tr>
+                <td>sddfffdsa@gmail.com</td>
+                <td>Av de France , Sion</td>
+            </tr>
+        </table>
+Susanne solution
+for th sign up made it a form width:100vw:
+ul{
+    display:grid; 
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 10px; 
+}
+li:first-child{
+    background-color:#F5CF8E ;
+}
+li:nth-child(2){
+    background-color: #C8C6FA;
+}
+li:nth-child(3){
+    background-color:#F09A9D ;
+}
+li:last-child{
+    background-color: #D6E9FE;
+}
+@media only screen and (min-width: 600px) and (max-width: 1173px){
+    li:last-child{
+        order: -1;
+    }
+    li:nth-child(2){
+        order: 4;
+    }}
+@media only screen and (min-width: 1173px){
+li:last-child{
+    grid-column:1/ -1;
+    text-align: center;
+    order: 4;
+}
+article{
+    order: 2;
+}
+}
+she made only one media query for desktop
+min-width 1200 
+body grid-template-rows auto auto 1fr
+
+disply flex flex-wrap:wrap 
+flex-basis 25rem
+flex-grow 1;
+orders are the same

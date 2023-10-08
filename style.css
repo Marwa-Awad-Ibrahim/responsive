@@ -1,0 +1,62 @@
+h1,h2,h3,h4{
+    font-family: 'Roboto', sans-serif;
+}
+*{
+    font-family: 'Playfair Display', serif;
+}
+ul{
+    font-family: 'Fragment Mono', monospace;
+}
+html, body{
+    height:100%
+}
+
+nav{
+    background-color: aqua;
+}
+header{
+    background-color: #fdffb6;
+}
+footer{
+    background-color: aqua;
+}
+main{
+    display:grid;
+}
+article{
+    background-color: #EAEDF0;
+}
+ul{
+    display:grid; 
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    gap: 10px; 
+}
+li:first-child{
+    background-color:#F5CF8E ;
+}
+li:nth-child(2){
+    background-color: #C8C6FA;
+}
+li:nth-child(3){
+    background-color:#F09A9D ;
+}
+li:last-child{
+    background-color: #D6E9FE;
+}
+@media only screen and (min-width: 600px) and (max-width: 1173px){
+    li:last-child{
+        order: -1;
+    }
+    li:nth-child(2){
+        order: 4;
+    }}
+@media only screen and (min-width: 1173px){
+li:last-child{
+    grid-column:1/ -1;
+    text-align: center;
+    order: 4;
+}
+article{
+    order: 2;
+}
+}
